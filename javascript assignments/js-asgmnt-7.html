@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+				var a=prompt("Enter a number");
+				 n=parseInt(a);
+			function flow()
+			{
+				
+				
+				
+			if(n>=0)
+				{
+					 var counting=setInterval("flow()",1000);
+					document.getElementById("count").innerHTML=n;
+					n--;
+
+				}
+				else
+				{
+					alert("time expired")
+				}
+			}
+		</script>
+	</head>
+	<body>
+	<button onclick="flow()">ok</button>
+	<label id="count"></label>
+	</body>
+</html>
