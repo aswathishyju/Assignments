@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var marks=[30,40,50,60,70];
+		function total()
+		{
+			var sum=0;
+
+			for( var i=0;i<5;i++)
+			{
+				sum=sum + marks[i];
+			}
+			alert("Total marks of student out of 500:" +sum);
+		}
+	</script>
+</head>
+<body>
+<form name="tot">
+	<input type="button" value="click" onclick="total();">
+</form>
+
+</body>
+</html>

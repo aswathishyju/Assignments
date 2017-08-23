@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/js30.css">
+	<script type="text/javascript">
+	function validate()
+	{
+	var name=document.getElementById('user').value;
+	var address=document.getElementById('address').value;
+	var email=document.getElementById('email').value;
+	var mobile=document.getElementById('mobile').value;
+	var password=document.getElementById('password').value;
+	var confirm=document.getElementById('confirm').value;
+	
+	if(name=="")
+	{
+
+		document.getElementById('name1').innerHTML="Enter your name";
+		
+
+	}
+	else
+	{
+		document.getElementById('name1').innerHTML="";
+	
+	}
+	if(address=="")
+	{
+		document.getElementById('name2').innerHTML="Enter your address";
+	
+
+	}
+	else
+	{
+		document.getElementById('name2').innerHTML="";
+		
+	}
+	if(email=="")
+	{
+		document.getElementById('name3').innerHTML="Enter your emailid";
+		
+
+	}
+	else
+	{
+		document.getElementById('name3').innerHTML="";
+	
+	}
+
+if(mobile=="")
+	{
+		document.getElementById('name4').innerHTML="Enter your mobile-no:";
+
+
+	}
+	else
+	{
+		document.getElementById('name4').innerHTML="";
+	
+	}
+	if(password=="")
+	{
+		document.getElementById('name5').innerHTML="Enter your password";
+		
+
+	}
+	else
+	{
+		document.getElementById('name5').innerHTML="";
+		
+	}
+if(confirm=="")
+	{
+		document.getElementById('name6').innerHTML="confirm your password";
+	
+			return true;
+	}
+	else
+	{
+
+		return false;
+	}
+
+		}
+	</script>
+</head>
+<body>
+<form name="valid" method="get" >
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-offset-2 col-md-8 col-md-offset-2">
+<h1>student registration form</h1>
+<!-- <div class="row">
+<div class="col-md-offset-3 col-md-6 col-md-offset-3"> -->
+Name:&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="user" id="user"><p id="name1"style="color:red"></p><br><br>
+personal address:&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="address" id="address"><p id="name2"style="color:red"></p><br><br>
+Email id:&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp<input type="text" name="email" id="email"><p id="name3"style="color:red"></p><br><br>
+Mobile No:&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="mobile" id="mobile"><p id="name4"style="color:red"></p><br><br>
+password:&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" name="password" id="password"><p id="name5"style="color:red"></p><br><br>
+cofirm password:&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" name="confirm" id="confirm"><p id="name6"style="color:red"></p><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" value="submit form" id="ok" onClick="validate();">
+<!-- </div>
+</div> -->
+</div>
+
+	
+</form>
+
+</body>
+</html>

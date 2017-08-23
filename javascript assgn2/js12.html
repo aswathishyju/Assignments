@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		var sco="apple";
+		function variab()
+		{
+			document.write("<h1>global</h1>",sco, "     "+"inside function<br>");
+
+		}
+		function varia()
+		{
+			var scop="apple";
+			document.write("<h1>local</h1>",scop," inside function<br>");
+		}
+		
+		variab();
+		document.write(sco," outside function");
+		varia();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
